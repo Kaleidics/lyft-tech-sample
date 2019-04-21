@@ -4,7 +4,7 @@
   "description": "This is a technical sample for lyft apprenticeship",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "test": "mocha --exit"
   },
   "repository": {
