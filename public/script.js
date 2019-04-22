@@ -3,16 +3,21 @@
 let form = document.getElementById('toThirds');
 form.addEventListener('submit', (event) =>{
     event.preventDefault();
-    const stringToThirds = document.getElementsByClassName('stringToCut');
+    const stringToThirds = document.getElementById('stringToCut').value;
     testRoute(stringToThirds);
 })
 
 function testRoute(input) {
     const url = 'https://lyft-technical-sample.herokuapp.com/test';
+    const url2 = 'http://localhost:8080/test';
 
-    fetch(url, {
+    const body = {
+        string_to_cut: input
+    }
+
+    fetch(url2, {
         method: 'POST',
-        body: JSON.stringify(input),
+        body: JSON.stringify(body),
         headers: {
             'Content-Type': 'application/json'
         }
@@ -20,8 +25,11 @@ function testRoute(input) {
     .then(res => res.json())
     .then(response => {
         const newstr = response.return_string;
-        console.log(newstr);
+        updatedString(newstr);
     })
-    .catch(err => alert(err));
-        
+    .catch(err => alert(err));    
+}
+
+function updatedString(input) {
+   document.getElementById('newString').innerHTML = `The cut string is: ${input}`;
 }

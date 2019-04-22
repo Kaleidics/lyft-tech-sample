@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Lyft Tech Sample</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
-    <h2>Lyft Technical Sample</h2>
-    <form id="toThirds">
-        <label for="sample">String</label>
-        <input class="stringToCut" type="text" name="sample" required>
-        <input type="submit">
-    </form>
+    <div class="container">
+        <h1>Lyft Technical Sample</h1>
+        <form id="toThirds">
+            <label class="inputPlace" for="sample" aria-label="Input">Enter a string to cut.</label>
+            <input id="stringToCut" class="stringToCut" type="text" name="sample" required>
+            <input class="submitBtn" type="submit" aria-controls="newString">
+        </form>
+    </div>
+    <h2 id="newString" class="results"></h2>
 
     <script src="script.js"></script>
 </body>
