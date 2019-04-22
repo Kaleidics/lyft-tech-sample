@@ -33,5 +33,5 @@ function testRoute(input) {
 
 //some dom manipulation for results
 function updatedString(input) {
-   document.getElementById('newString').innerHTML = `The cut string is: ${input}`;
+   document.getElementById('newString').innerHTML = `The cut string: ${input}`;
 }

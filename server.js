@@ -20,7 +20,7 @@ app.use(express.static('public'));
 app.post('/test', (req, res) => {
     if (req.body.string_to_cut.length < 3) {
         res.json({
-            return_string: "Did not have enough characters. Please enter at least 3 characters."
+            return_string: "did not have enough characters to show. Please enter at least 3 characters."
         })
     }
     else {
