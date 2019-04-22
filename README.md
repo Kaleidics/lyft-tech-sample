@@ -2,7 +2,7 @@
 
 This is a technical sample for the Lyft Apprenticeship.
 
-A clientside web application is deployed [Here](https://lyft-technical-sample.herokuapp.com/) and makes a POST request to the test route on my backend. <br>It is a form that takes a single string input and returns a new string containing every 3rd letter of the original string.<br>It is hosted on a free account on Heroku, so expect 30 seconds to a minute for the application to wake from sleep.
+The application is deployed [Here](https://lyft-technical-sample.herokuapp.com/) and makes a POST request to the test route on my backend. <br>It is a form that takes a single string input and returns a new string containing every 3rd letter of the original string.<br>It is hosted on a free account on Heroku, so expect 30 seconds to a minute for the application to wake from sleep.
 
 CORS is only enabled for the origin https://lyft-technical-sample.herokuapp.com/ <br>
 So you will not be able to test the route from any other origin(http).
