@@ -56,15 +56,19 @@ form * {
 .submitBtn {
     width: 100%;
     height: 45px;
-    border: 1px solid black;
+    border: 2px solid white;
     border-radius: 3px;
-    color: white;
-    background-color: rgba(218, 165, 32, 0.9);
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ff00bf;
+    background-color: white;
     cursor: pointer;
 }
 
 .submitBtn:hover {
-   background-color: rgba(218, 165, 32, 1);
+    color: white;
+    border-color: #ff00bf;
+    background-color: #ff00bf;
 }
 
 .results {
