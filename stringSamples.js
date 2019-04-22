@@ -20,7 +20,7 @@ const Thirder = {
     filterOne: function(str) {
         return [...str].filter((e, i) => !(++i % 3)).join("");
     },
-    //doesn't really work unless the number of characters in string is exactly a multiple of three
+    //doesn't really work unless the number of characters in the string is exactly a multiple of three
     regexOne: function(str) {
         return str.replace(/..(.)/g, "$1");
     }

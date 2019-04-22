@@ -3,7 +3,7 @@ const Thirder = require('../stringSamples')
 
 describe('Thirder', function () {
 
-    it('return a string with every 3rd letter', function() {
+    it('should return a string with every 3rd letter', function() {
         const cases = [
             { a: '123123123', expected: '333' },
             { a: 'iamyourlyftdriver', expected: 'muydv' },
