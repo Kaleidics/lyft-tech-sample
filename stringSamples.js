@@ -1,6 +1,9 @@
 'use strict';
 
+
 const Thirder = {
+    //There were a number of solutions I came up with
+    //This one looks to my favorable solution. It takes only O(n/k) steps (where k=3), looking only at every third index/character instead of every single one (O(n)).
     iterativeOne: function(str) {
         let newstr = '';
         for (let i = 2; i < str.length; i += 3) {

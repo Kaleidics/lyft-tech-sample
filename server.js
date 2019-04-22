@@ -5,6 +5,7 @@ const cors = require('cors');
 const app = express();
 const Thirder = require('./stringSamples')
 
+//enable cors
 app.use(express.json());
 app.use(
     cors({
@@ -12,8 +13,10 @@ app.use(
     })
 );
 
+//serve client files
 app.use(express.static('public'));
 
+//The route in question
 app.post('/test', (req, res) => {
     const strToThird = Thirder.iterativeOne(req.body.string_to_cut);
     res.json({

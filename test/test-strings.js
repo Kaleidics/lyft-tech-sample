@@ -1,6 +1,7 @@
 const expect = require('chai').expect;
 const Thirder = require('../stringSamples')
 
+// unit test for the functionality in question
 describe('Thirder', function () {
 
     it('should return a string with every 3rd letter', function() {

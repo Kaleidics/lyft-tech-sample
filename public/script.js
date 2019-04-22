@@ -1,5 +1,6 @@
 'use strict';
 
+//handles form submission
 let form = document.getElementById('toThirds');
 form.addEventListener('submit', (event) =>{
     event.preventDefault();
@@ -7,6 +8,7 @@ form.addEventListener('submit', (event) =>{
     testRoute(stringToThirds);
 })
 
+//accessing the test route on the server
 function testRoute(input) {
     const url = 'https://lyft-technical-sample.herokuapp.com/test';
 
@@ -29,6 +31,7 @@ function testRoute(input) {
     .catch(err => alert(err));    
 }
 
+//some dom manipulation for results
 function updatedString(input) {
    document.getElementById('newString').innerHTML = `The cut string is: ${input}`;
 }
