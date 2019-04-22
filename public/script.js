@@ -9,13 +9,12 @@ form.addEventListener('submit', (event) =>{
 
 function testRoute(input) {
     const url = 'https://lyft-technical-sample.herokuapp.com/test';
-    const url2 = 'http://localhost:8080/test';
 
     const body = {
         string_to_cut: input
     }
 
-    fetch(url2, {
+    fetch(url, {
         method: 'POST',
         body: JSON.stringify(body),
         headers: {
