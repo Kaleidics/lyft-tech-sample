@@ -28,6 +28,7 @@ body {
 
 h1 {
     font-size: 4rem;
+    text-align: center;
 }
 
 form {
@@ -39,6 +40,7 @@ form {
 
 form * {
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .inputPlace {
