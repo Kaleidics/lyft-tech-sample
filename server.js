@@ -9,7 +9,7 @@ const Thirder = require('./stringSamples')
 app.use(express.json());
 app.use(
     cors({
-        origin: ['https://lyft-technical-sample.herokuapp.com/']
+        origin: ['*']
     })
 );
 
